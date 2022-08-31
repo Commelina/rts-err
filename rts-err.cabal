@@ -1,0 +1,20 @@
+cabal-version:   2.4
+name:            rts-err
+version:         0.1.0.0
+license:         MIT
+license-file:    LICENSE
+author:          Commelina
+maintainer:      maosics@gmail.com
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+
+executable rts-err
+  main-is:          Main.hs
+  build-depends:
+    , base    >=4.14
+    , Z-Data  ^>=0.8
+    , Z-IO    ^>=0.8
+
+  hs-source-dirs:   app
+  default-language: Haskell2010
+  ghc-options:      -Wall -rtsopts -threaded
